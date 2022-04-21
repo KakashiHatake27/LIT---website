@@ -1,0 +1,373 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: Cambria;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(res/bg2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding-top: 12px;
+    padding-right: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    top: 35px;
+    font-size: x-large;
+}
+
+.navbar ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.floating-btn {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: #4C566A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: background 0.25s;
+}
+
+.floating-btn active {
+    background: white;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.intro {
+    background-color: aqua;
+    text-align: center;
+    font-style: oblique;
+    font-size: larger;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+
+/* Whereabout */
+
+.about {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+/* .address iframe {
+    width: 600px;
+    height: 450px;
+}
+
+.address {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 40%; 
+}*/
+
+
+/* margin: auto;
+    align-items: center;
+    align-content: center;
+} */
+
+
+/* .address {
+     width: 70%;
+    height: 100%;
+    margin: 0px auto;
+    display: inline-block; 
+} */
+
+.about h1 {
+    text-align: center;
+}
+
+
+/* Contact Section */
+
+.contact {
+    padding-top: 20px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact-box {
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    left: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.contact-title {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.contact-form {
+    margin: 35px;
+}
+
+.name {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.email {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.message {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.btn-send {
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.or {
+    margin: auto;
+    width: auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+.whatsapp {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* 
+.contact a {
+    text-align: center;
+} */
+
+
+/* Callout stuff */
+
+.callout {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+.callout-header {
+    padding: 25px 15px;
+    background: rgb(23, 124, 23);
+    font-size: 30px;
+    color: white;
+}
+
+.callout-container {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #ccc;
+    color: black
+}
+
+#num {
+    color: #3B5998;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: lightgrey;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/* Facebook */
+
+.fa-facebook {
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-whatsapp {
+    margin-left: 10px;
+    background: rgb(23, 124, 23);
+    color: white;
+    cursor: pointer;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.credit {
+    text-align: center;
+    font-size: large;
+}
+
+@media screen and (min-width: 782px) {
+    .address iframe {
+        width: 600px;
+        height: 450px;
+    }
+    .address {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* width: 40%; */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar ul {
+        display: none;
+    }
+    .logo img {
+        width: 350px;
+    }
+    .address {
+        margin: auto;
+        width: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .floating-btn {
+        height: 50px;
+        width: 50px;
+    }
+    .contact-box {
+        width: 350px;
+    }
+    .name {
+        width: 250px;
+    }
+    .email {
+        width: 250px;
+    }
+    .message {
+        width: 250px;
+    }
+}
