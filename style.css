@@ -11,18 +11,23 @@ header {
     background-position: center;
 }
 
-.navbar ul {
+nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
     list-style-type: none;
     text-align: center;
 }
 
-.navbar ul li {
+nav ul li {
     display: inline-block;
     padding-top: 12px;
     padding-right: 15px;
 }
 
-.navbar ul li a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
     padding: 15px 20px;
@@ -32,19 +37,31 @@ header {
     font-size: x-large;
 }
 
-.navbar ul li a:hover {
+nav ul li a:hover {
     background-color: #fff;
     color: #000;
 }
 
-.navbar ul li.active a {
+nav ul li.active a {
     background-color: #fff;
     color: #000;
 }
 
-.navbar {
-    max-width: 1200px;
-    margin: auto;
+.burger {
+    display: none;
+    float: right;
+    cursor: pointer;
+    margin-top: 7%;
+    margin-right: 10%;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
 }
 
 .floating-btn {
@@ -59,7 +76,6 @@ header {
     border-radius: 50%;
     color: #ffffff;
     font-size: 40px;
-    
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.733);
     position: fixed;
     right: 20px;
@@ -92,18 +108,6 @@ header {
     padding-bottom: 60px;
 }
 
-.hamburger {
-    background-color: transparent;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.hamburger:focus {
-    outline: none;
-}
-
 
 /* Whereabout */
 
@@ -111,32 +115,6 @@ header {
     padding-top: 20px;
     text-align: center;
 }
-
-
-/* .address iframe {
-    width: 600px;
-    height: 450px;
-}
-
-.address {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 40%; 
-}*/
-
-
-/* margin: auto;
-    align-items: center;
-    align-content: center;
-} */
-
-
-/* .address {
-     width: 70%;
-    height: 100%;
-    margin: 0px auto;
-    display: inline-block; 
-} */
 
 .about h1 {
     text-align: center;
@@ -233,26 +211,16 @@ header {
 }
 
 
-/* 
-.contact a {
-    text-align: center;
-} */
-
-
 /* Callout stuff */
 
 .callout {
-
     display: none;
     position: fixed;
     bottom: 35px;
     right: 20px;
     margin-left: 20px;
     max-width: 300px;
-
-    
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.733);
-
 }
 
 .callout-header {
@@ -348,8 +316,8 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    .navbar ul {
-        display: none;
+    .logo {
+        z-index: 300px;
     }
     .logo img {
         width: 350px;
@@ -376,4 +344,64 @@ footer {
     .message {
         width: 250px;
     }
+    body {
+        overflow-x: hidden;
+    }
+    /* nav {
+        top: 100px;
+        padding-top: 40px;
+        border: solid 2px black;
+    } */
+    .burger {
+        display: block;
+    }
+    .nav-links {
+        display: flex;
+        /* background-color: red; */
+        justify-content: space-around;
+        width: 30%;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        /* top: 8vh; */
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
