@@ -59,7 +59,8 @@ header {
     border-radius: 50%;
     color: #ffffff;
     font-size: 40px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.733);
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -241,12 +242,17 @@ header {
 /* Callout stuff */
 
 .callout {
+
     display: none;
     position: fixed;
     bottom: 35px;
     right: 20px;
     margin-left: 20px;
     max-width: 300px;
+
+    
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.733);
+
 }
 
 .callout-header {
