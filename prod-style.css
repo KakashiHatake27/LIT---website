@@ -98,6 +98,16 @@ body {
     flex-direction: row;
 }
 
+.special-grid {
+    margin: 20px;
+    padding: 20px;
+    /* background: #9e699e00; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .product h2 {
     color: lightblue;
 }
