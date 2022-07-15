@@ -10,6 +10,11 @@ header {
     background-size: cover;
     background-position: center;
 }
+
+
+.head{
+    height:10vh;
+}
 /*
 nav ul {
     list-style-type: none;
