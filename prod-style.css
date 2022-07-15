@@ -131,10 +131,13 @@ body {
 
 .product h2 {
     color: lightblue;
+
+    margin-bottom: 2px;
 }
 
 .product h3 {
     color: rgb(82, 211, 87);
+margin-bottom: 2px;
 }
 
 .product-grid a {
@@ -151,8 +154,12 @@ body {
     padding: 20px;
     margin: 20px;
     width: 25%;
-    height: auto;
+    height:auto;
     border: solid 3px black;
+}
+.smaller-prod img{
+    height:80%;
+    width: fit-content;
 }
 
 .product img {
@@ -160,6 +167,7 @@ body {
     /* border: solid 5px blue; */
 }
 
+.fix-size{height: 20px;}
 
 /* Callout stuff */
 
