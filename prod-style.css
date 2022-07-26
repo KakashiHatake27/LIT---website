@@ -11,8 +11,8 @@ header {
     background-position: center;
 }
 
-.head{
-    height:10vh;
+.head {
+    height: 10vh;
 }
 
 nav {
@@ -130,23 +130,24 @@ body {
 }
 
 .product h2 {
-    color: lightblue;
-
+    color: white;
+    font-size: medium;
     margin-bottom: 2px;
 }
 
 .product h3 {
-    color: rgb(82, 211, 87);
-margin-bottom: 2px;
+    /* color: rgb(82, 211, 87); */
+    color: blue;
+    margin-bottom: 2px;
 }
 
 .product-grid a {
     margin-top: 20px;
     width: 100%;
     text-align: center;
-    font-size: xx-large;
+    font-size: large;
     font-weight: bold;
-    color: white;
+    color: blue;
     border: SOLID 3px whitesmoke;
 }
 
@@ -154,11 +155,12 @@ margin-bottom: 2px;
     padding: 20px;
     margin: 20px;
     width: 25%;
-    height:auto;
-    border: solid 3px black;
+    height: auto;
+    border: solid 3px whitesmoke;
 }
-.smaller-prod img{
-    height:80%;
+
+.smaller-prod img {
+    height: 80%;
     width: fit-content;
 }
 
@@ -167,7 +169,9 @@ margin-bottom: 2px;
     /* border: solid 5px blue; */
 }
 
-.fix-size{height: 20px;}
+.fix-size {
+    height: 20px;
+}
 
 /* Callout stuff */
 
@@ -261,6 +265,7 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+
     /* .product-grid { */
     /* margin: 5px; */
     /* width: 80%; */
@@ -268,10 +273,12 @@ footer {
     .product {
         width: 40%;
     }
+
     .floating-btn {
         height: 50px;
         width: 50px;
     }
+
     .fa {
         margin-bottom: 30px;
     }
@@ -282,19 +289,23 @@ footer {
         height: 50px;
         width: 50px;
     }
+
     body {
         overflow-x: hidden;
     }
+
     .burger {
         display: block;
         width: auto;
     }
+
     .nav-links {
         display: flex;
         /* background-color: red; */
         justify-content: space-around;
         width: 30%;
     }
+
     .nav-links {
         position: absolute;
         right: 0px;
@@ -308,12 +319,13 @@ footer {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+
     .nav-links li {
         opacity: 0;
     }
 
-    .callout{
-        right:auto;
+    .callout {
+        right: auto;
         bottom: 50px;
     }
 
@@ -330,6 +342,7 @@ footer {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0px);
@@ -356,23 +369,23 @@ footer {
 .container {
     position: relative;
     display: none;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
+}
+
+/* Expanding image text */
+#imgtext {
     position: absolute;
     bottom: 15px;
     left: 15px;
     color: white;
     font-size: 20px;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn-img {
+}
+
+/* Closable button inside the expanded image */
+.closebtn-img {
     position: absolute;
     top: 10px;
     right: 15px;
     color: white;
     font-size: 35px;
     cursor: pointer;
-  }
+}
